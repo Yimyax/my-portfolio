@@ -1,65 +1,76 @@
-import Image from "next/image";
+import { projects } from "./data/projects";
+import { highlightSkills } from "./data/skills";
+import { tagColor } from "./lib/colours";
 
 export default function Home() {
+  const featuredProjects = projects.filter((p) => p.highlight);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <main className="max-w-3xl mx-auto px-6 py-16">
+      {/* Intro */}
+      <section className="bg-linear-to-b from-(--sky) to-white pt-16 pb-20 -mx-6 px-6 relative mb-6">
+        <div className="max-w-3xl mx-auto">
+          <h1 className="font-(family-name:--font-display) text-4xl font-bold text-(--ocean) mb-2">
+            Joshua Isaraela
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="text-lg text-(--ink)/80 mb-4">
+            Computer Science graduate | Front-end / Back-end / Software Developer / Games Developer
           </p>
+          <p className="mb-4">
+            Graduate of UTS, having experiences & skills in web development, software development and games development.
+          </p>
+          <div className="flex gap-4">
+            <a href="www.linkedin.com/in/joshua-isaraela-23457a319" className="text-(--ocean) underline">LinkedIn</a>
+            <a href="https://github.com/Yimyax" className="text-(--ocean) underline">GitHub</a>
+            <a href="https://yimyax.itch.io/" className="text-(--ocean) underline">Itch</a>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        {/* Wave divider */}
+        <svg className="absolute bottom-0 left-0 w-full" viewBox="0 0 1440 60" preserveAspectRatio="none">
+          <path fill="white" d="M0,32 C360,60 1080,0 1440,32 L1440,60 L0,60 Z" />
+        </svg>
+      </section>
+
+      {/* Skills - highlights only */}
+      <section className="mb-16">
+        <h2 className="text-2xl font-semibold mb-4">Skills</h2>
+        <div className="flex flex-wrap gap-2">
+          {highlightSkills.map((skill, i) => (
+            <span
+              key={skill}
+              className="px-3 py-1 rounded-full text-sm text-white"
+              style={{ backgroundColor: tagColor(i) }}
+            >
+              {skill}
+            </span>
+          ))}
         </div>
-      </main>
-    </div>
+        <a href="/about" className="text-sm underline mt-3 inline-block">
+          See full skill list →
+        </a>
+      </section>
+
+      {/* Projects - highlights only */}
+      <section>
+        <h2 className="text-2xl font-semibold mb-4">Projects</h2>
+        <div className="space-y-6">
+          {featuredProjects.map((project) => (
+            <div key={project.title} className="bg-white border border-(--ocean)/20 rounded-lg p-4 shadow-sm">
+              <h3 className="text-xl font-medium">{project.title}</h3>
+              <p className="text-gray-600 mb-2">{project.description}</p>
+              <div className="flex gap-4 text-sm">
+                <a href={project.github} className="underline">GitHub</a>
+                {project.demo && (
+                  <a href={project.demo} className="underline">Live Demo</a>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+        <a href="/projects" className="text-sm underline mt-3 inline-block">
+          See all projects →
+        </a>
+      </section>
+    </main>
   );
 }
