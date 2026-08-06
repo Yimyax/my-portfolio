@@ -11,7 +11,7 @@ export default function About() {
         <p className="mb-4">
           I am a Graduate of University of Technology Sydney, studying Bachelor of Science in Games Development.
           Having practical industry experience in software automation, database development, and ERP system support, alongside a broad portfolio of independent and team-based projects spanning web applications, game development, and interactive media.
-          Comfortable working independently and collaboratively, with Over five years of programming experience across Java, JavaScript, Python, SQL, PHP, C#, C++, and Swift.
+          Comfortable working independently and collaboratively, with over five years of programming experience across Java, JavaScript, Python, SQL, PHP, C#, C++, and Swift.
           Interested in entry-level / junior roles across software development, web development, and software engineer.
         </p>
       </section>
