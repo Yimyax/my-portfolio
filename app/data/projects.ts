@@ -67,7 +67,7 @@ export const projects = [
     title: "Portfolio Website",
     description: "A custom website showing projects and skills. (This very website)",
     tech: ["React", "HTML", "Typescript", "CSS", "Javascript", "Node.js", "Next.js"],
-    github: "",
+    github: "https://github.com/Yimyax/my-portfolio",
     demo: "",
     highlight: false, // only shows on the full Projects page
   },
