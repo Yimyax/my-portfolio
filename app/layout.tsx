@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins, Inter } from "next/font/google";
 import "./globals.css";
 import ThemeToggle from "./components/ThemeToggle";
+import Link from "next/link";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -33,9 +34,9 @@ export default function RootLayout({
               Joshua Isaraela
             </a>
             <div className="flex gap-6 text-sm items-center">
-              <a href="/ " className="text-white hover:text-(--amber)">Home</a>
-              <a href="/projects" className="text-white hover:text-(--amber)">Projects</a>
-              <a href="/about" className="text-white hover:text-(--amber)">About</a>
+              <Link href="/ " className="text-white hover:text-(--amber)">Home</Link>
+              <Link href="/projects" className="text-white hover:text-(--amber)">Projects</Link>
+              <Link href="/about" className="text-white hover:text-(--amber)">About</Link>
               <ThemeToggle />
             </div>
           </nav>

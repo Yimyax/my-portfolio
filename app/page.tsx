@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { projects } from "./data/projects";
 import { highlightSkills } from "./data/skills";
 import { tagColor } from "./lib/colours";
@@ -55,21 +56,19 @@ export default function Home() {
         <h2 className="text-2xl font-semibold mb-4">Projects</h2>
         <div className="space-y-6">
           {featuredProjects.map((project) => (
-            <div key={project.title} className="bg-white border border-(--ocean)/20 rounded-lg p-4 shadow-sm">
-              <h3 className="text-xl font-medium">{project.title}</h3>
-              <p className="text-gray-600 mb-2">{project.description}</p>
-              <div className="flex gap-4 text-sm">
-                <a href={project.github} className="underline">GitHub</a>
-                {project.demo && (
-                  <a href={project.demo} className="underline">Live Demo</a>
-                )}
+            <Link key ={project.slug} href={`/projects/${project.slug}`}>
+              <div key={project.title} className="bg-white border border-(--ocean)/20 rounded-lg p-4 shadow-sm mb-5 mt-5 hover:bg-red-200">
+                <h3 className="text-xl font-medium">{project.title}</h3>
+                <p className="text-gray-600 mb-2">{project.description}</p>
+                <div className="flex gap-4 text-sm">
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
-        <a href="/projects" className="text-sm underline mt-3 inline-block">
+        <Link href="/projects" className="text-sm underline mt-3 inline-block">
           See all projects →
-        </a>
+        </Link>
       </section>
     </main>
   );

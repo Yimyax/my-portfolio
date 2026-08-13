@@ -5,11 +5,11 @@ export const skillGroups = [
   },
   {
     category: "Frameworks & Libraries",
-    skills: ["AWS (student)", "Unity", "Unreal Engine", "React", "Node.js", "Three.js", "Next.js", "Xcode", "Godot Engine", "Processing", "XAMPP"],
+    skills: ["AWS (student)", "Unity", "Unreal Engine", "React", "Node.js", "Three.js", "Next.js", "Xcode", "Godot Engine", "Processing", "API"],
   },
   {
     category: "Tools",
-    skills: ["Atlassian Jira", "Atlassian Confluence", "Microsoft Excel", "Github", "VS Code", "ChatGPT AI", "Claude AI"],
+    skills: ["Atlassian Jira", "Atlassian Confluence", "Microsoft Excel", "Github", "VS Code", "ChatGPT AI", "Claude AI", "XAMPP", "Figma"],
   },
 ];
 
