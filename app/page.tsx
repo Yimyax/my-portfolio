@@ -21,7 +21,7 @@ export default function Home() {
             Graduate of UTS, having experiences & skills in web development, software development and games development.
           </p>
           <div className="flex gap-4">
-            <a href="www.linkedin.com/in/joshua-isaraela-23457a319" className="text-(--ocean) underline">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/joshua-isaraela-23457a319/" className="text-(--ocean) underline">LinkedIn</a>
             <a href="https://github.com/Yimyax" className="text-(--ocean) underline">GitHub</a>
             <a href="https://yimyax.itch.io/" className="text-(--ocean) underline">Itch</a>
           </div>

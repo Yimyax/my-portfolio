@@ -39,7 +39,9 @@ export default async function ProjectDetail({
       </section>
 
       <div className="flex gap-4">
-        <a href={project.github} className="text-(--ocean) underline">GitHub</a>
+        {project.github && (
+          <a href={project.github} className="text-(--ocean) underline">GitHub</a>
+        )}
         {project.demo && (
           <a href={project.demo} className="text-(--ocean) underline">Live Demo</a>
         )}

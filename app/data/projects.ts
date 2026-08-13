@@ -6,7 +6,7 @@ export const projects = [
     longDescription: "This project was done individually. The purpose of the project was to create an online website which allows users to rent cars. It consists of a grid-view of cars which can be rented by users. There is a filter bar and search bar at the top of the page, which can be used to search for specific cars/car models. The user can rent an available car by filling out a form for renting/customer details. Once rented, the car will be marked 'unavailabe' in the main page. This project was built using HTML, PHP, CSS, Javascript, and JSON using AWS (student) cloud services.",
     features: ["Grid-view of cars and their details.", "Filter and Search bar to help with car seach.", "Registration form which the user fills out before renting car.","A JSON database holding information for cars and their availability."],
     tech: ["AWS (Student)", "HTML", "PHP", "CSS", "Javascript", "JSON"],
-    github: "github.com/Yimyax/Car-Rental-Website",
+    github: "https://github.com/Yimyax/Car-Rental-Website",
     demo: "",
     photos: ["photo url"],
     highlight: true, // shows on homepage
@@ -18,7 +18,7 @@ export const projects = [
     longDescription: "This project was done in a team of 4. The purpose of the project was to create an interactive environment which utilises Three.js and Javascript. It consists of a 3D environment of a procedurally generated terrain, trees, clouds and sun. Their is a HUD which allows the user to control the environment's values such as terrain bumpiness, tree height, sun's daylight, and more. Once a value is changed, the environment will udpate live. This project was built with the help of Node.js, Visual Studio Code.",
     features: ["The environment is procedurally generated. ","HUD for controling values of the environment.", "The environment updates live when it's values are changed in the HUD.", "The user can move around the environment using camera controls and movement controls."],
     tech: ["Three.js", "Javascript", "Node.js", "HTML", "CSS", "Visual Studio Code", "Github"],
-    github: "github.com/Yimyax/ThreeJS-Project",
+    github: "https://github.com/Yimyax/ThreeJS-Project",
     demo: "",
     photos: ["photo url"],
     highlight: true,
@@ -30,7 +30,7 @@ export const projects = [
     longDescription: "This project was done in a team of 2. The purpose of the project was to create 2 AI systems which could be implemented in a real multiplayer game. It consists of a patrolling enemy AI system and a stationary enemy AI system. The patrolling enemy walks around the envrionment, searching for the player, then hunts them down by finding the shortest path. The stationary enemy searches for the player and shoots a laser to hunt them down. As time goes on, both AI systems will gradually become smarter and faster at tracking down the player. The project also supports multiplayer, so many players can try escape/survive the enemies. This project was built in Unreal Engine using C++.",
     features: ["An AI system that patrols, chases, and hunts the player.", "An AI system that seeks, follows, and shoots the player.", "Compatability with multiple players (up to 4 players)."],
     tech: ["Unreal Engine", "C++"],
-    github: "github.com/Yimyax/EnemyAI_Systems",
+    github: "https://github.com/Yimyax/EnemyAI_Systems",
     demo: "https://www.youtube.com/watch?v=XMoHwH76-QI&list=PL_Oshr_zVBisVZ_3ncVF5e671FluzElV&index=5",
     photos: ["photo url"],
     highlight: false, // only shows on the full Projects page
@@ -42,7 +42,7 @@ export const projects = [
     longDescription: "This project was done individually. The purpose of this project was to create an interactive software which records and transforms data. It consists of a painting tool having settings for colour, shape, and size. A timer records the drawing and animates it once it is up. Sounds are played whenever the drawing hits the edge of the screen. There are options to freeze the animation, mute the sounds, and let the drawing overlap creating a new artwork. The user can clear the canvas to start again. This project was built using Java in Processing.",
     features: ["A painting tool with various stroke options for colours, transparencies, shapes, and sizes.", "A preview of what the stroke looks like.", "An option to change the animation and sounds toggle.", "A clear button that restarts the experience.", "Drawings animate after a while and can make sounds too."],
     tech: ["Processing", "Java"],
-    github: "github.com/Yimyax/Processing-Interactive-Media",
+    github: "https://github.com/Yimyax/Processing-Interactive-Media",
     demo: "",
     photos: ["photo url"],
     highlight: true, // only shows on the full Projects page
@@ -55,7 +55,7 @@ export const projects = [
     features: ["1 tutorial + 3 levels, each with a different theme, choice modifier, and puzzles.", "A 'Would you rather' decision mechanic which can affect the player, snail, or level.", "Unique puzzles to solve such as the keypad & passcode, pressure plate, boxes, conveyor belts, and buttons."],
     tech: ["Unity", "C#", "Atlassian Jira", "Atlassian Confluence", "Github"],
     github: "",
-    demo: "harrylec.itch.io/snail-game",
+    demo: "https://harrylec.itch.io/snail-game",
     photos: ["photo url"],
     highlight: false, // only shows on the full Projects page
   },
