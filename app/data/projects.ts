@@ -104,7 +104,7 @@ export const projects = [
     tech: ["React", "HTML", "Typescript", "CSS", "Javascript", "Node.js", "Next.js"],
     github: "https://github.com/Yimyax/my-portfolio",
     demo: ["https://joshuaisaraela.vercel.app/"],
-    photos: ["/projects/portfolio-website-photo1.png","/projects/portfolio-website-photo2.png","/projects/portfolio-website-photo3.png"],
+    photos: ["/projects/portfolio-website-photo1.png","/projects/portfolio-website-photo2.png","/projects/portfolio-website-photo3.png","/projects/portfolio-website-photo4.png"],
     highlight: true, // only shows on the full Projects page
   },
 ];
