@@ -2,6 +2,7 @@ import { projects } from "../../data/projects";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import { tagColor } from "../../lib/colours";
+import PhotoGallery from "../../components/PhotoGallery";
 
 export default async function ProjectDetail({
   params,
@@ -38,14 +39,22 @@ export default async function ProjectDetail({
         </ul>
       </section>
 
-      <div className="flex gap-4">
+      <div className="flex gap-4 mb-8">
         {project.github && (
-          <a href={project.github} className="text-(--ocean) underline">GitHub</a>
+          <a href={project.github} className="text-(--ocean) underline hover:text-blue-950 text-2xl">GitHub</a>
         )}
-        {project.demo && (
-          <a href={project.demo} className="text-(--ocean) underline">Live Demo</a>
-        )}
+        {project.demo && (project.demo.map((links) => (
+            <a key={links} href={links} className="text-(--ocean) underline hover:text-blue-950 text-2xl">Demo</a>
+          )))}
       </div>
+
+      {project.photos.length > 0 && (
+        <section className="mb-8">
+          <h2 className="text-xl font-semibold mb-3">Photo Gallery</h2>
+          <PhotoGallery photos={project.photos} title={project.title} />
+        </section>
+      )}
+
     </main>
   );
 }

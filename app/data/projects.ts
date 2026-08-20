@@ -4,11 +4,11 @@ export const projects = [
     title: "Online Car Rental Website",
     description: "A website having a gridview of available cars to rent. A search bar and filters can help search the car desired.",
     longDescription: "This project was done individually. The purpose of the project was to create an online website which allows users to rent cars. It consists of a grid-view of cars which can be rented by users. There is a filter bar and search bar at the top of the page, which can be used to search for specific cars/car models. The user can rent an available car by filling out a form for renting/customer details. Once rented, the car will be marked 'unavailabe' in the main page. This project was built using HTML, PHP, CSS, Javascript, and JSON using AWS (student) cloud services.",
-    features: ["Grid-view of cars and their details.", "Filter and Search bar to help with car seach.", "Registration form which the user fills out before renting car.","A JSON database holding information for cars and their availability."],
+    features: ["Grid-view of cars and their details.", "Filter and Search bar to help with car seach.", "Registration form which the user fills out before renting car.","A JSON database holding information for cars and their availability.","Order confirmation page displaying the rented car and duration."],
     tech: ["AWS (Student)", "HTML", "PHP", "CSS", "Javascript", "JSON"],
     github: "https://github.com/Yimyax/Car-Rental-Website",
-    demo: "",
-    photos: ["photo url"],
+    demo: [],
+    photos: ["/projects/car-rental-photo1.png","/projects/car-rental-photo2.png","/projects/car-rental-photo3.png","/projects/car-rental-photo4.png"],
     highlight: true, // shows on homepage
   },
   {
@@ -19,8 +19,8 @@ export const projects = [
     features: ["The environment is procedurally generated. ","HUD for controling values of the environment.", "The environment updates live when it's values are changed in the HUD.", "The user can move around the environment using camera controls and movement controls."],
     tech: ["Three.js", "Javascript", "Node.js", "HTML", "CSS", "Visual Studio Code", "Github"],
     github: "https://github.com/Yimyax/ThreeJS-Project",
-    demo: "",
-    photos: ["photo url"],
+    demo: [],
+    photos: ["/projects/threejs-environment-photo1.png","/projects/threejs-environment-photo2.png","/projects/threejs-environment-photo3.png","/projects/threejs-environment-photo4.png"],
     highlight: true,
   },
   {
@@ -31,8 +31,8 @@ export const projects = [
     features: ["An AI system that patrols, chases, and hunts the player.", "An AI system that seeks, follows, and shoots the player.", "Compatability with multiple players (up to 4 players)."],
     tech: ["Unreal Engine", "C++"],
     github: "https://github.com/Yimyax/EnemyAI_Systems",
-    demo: "https://www.youtube.com/watch?v=XMoHwH76-QI&list=PL_Oshr_zVBisVZ_3ncVF5e671FluzElV&index=5",
-    photos: ["photo url"],
+    demo: ["https://www.youtube.com/watch?v=XMoHwH76-QI&list=PL_Oshr_zVBisVZ_3ncVF5e671FluzElV&index=5", "https://www.youtube.com/watch?v=3SOso1KlBf4"],
+    photos: ["/projects/enemy-ai-system-photo1.png","/projects/enemy-ai-system-photo2.png","/projects/enemy-ai-system-photo3.png","/projects/enemy-ai-system-photo4.png","/projects/enemy-ai-system-photo5.png","/projects/enemy-ai-system-photo6.png"],
     highlight: false, // only shows on the full Projects page
   },
   {
@@ -43,8 +43,8 @@ export const projects = [
     features: ["A painting tool with various stroke options for colours, transparencies, shapes, and sizes.", "A preview of what the stroke looks like.", "An option to change the animation and sounds toggle.", "A clear button that restarts the experience.", "Drawings animate after a while and can make sounds too."],
     tech: ["Processing", "Java"],
     github: "https://github.com/Yimyax/Processing-Interactive-Media",
-    demo: "",
-    photos: ["photo url"],
+    demo: [],
+    photos: ["/projects/interactive-processing-photo1.png","/projects/interactive-processing-photo2.png","/projects/interactive-processing-photo3.png","/projects/interactive-processing-photo4.png"],
     highlight: true, // only shows on the full Projects page
   },
   {
@@ -55,20 +55,20 @@ export const projects = [
     features: ["1 tutorial + 3 levels, each with a different theme, choice modifier, and puzzles.", "A 'Would you rather' decision mechanic which can affect the player, snail, or level.", "Unique puzzles to solve such as the keypad & passcode, pressure plate, boxes, conveyor belts, and buttons."],
     tech: ["Unity", "C#", "Atlassian Jira", "Atlassian Confluence", "Github"],
     github: "",
-    demo: "https://harrylec.itch.io/snail-game",
-    photos: ["photo url"],
+    demo: ["https://harrylec.itch.io/snail-game"],
+    photos: ["/projects/3d-puzzle-game-photo1.png", "/projects/3d-puzzle-game-photo2.png", "/projects/3d-puzzle-game-photo3.png", "/projects/3d-puzzle-game-photo4.png", "/projects/3d-puzzle-game-photo5.png", "/projects/3d-puzzle-game-photo6.png"],
     highlight: false, // only shows on the full Projects page
   },
   {
     slug: "3d-animation",
     title: "3D Animation Film (Team of 3)",
     description: "A 3D animation about a person missing their train and tries to run to the next station.",
-    longDescription: "This project was done in a team of 3. The purpose of this project was to create a short animation film using Unity. The animation consists of a character who has missed the last train to their destination and decides to run to the next station to hopefully catch the train agin. The character does crazy parkour and stunts through the station, streets, traffic cars and construction zone. Camera shots also show the character's facial expressions and different angles of the stunt. The project was built with the help of Github, animations from the Unity Asset store and models from sketchfab. The character facial expressions and video editing were done in photoshop/picsart and imovie.",
-    features: ["Various character's facial and body expressions", "Various pakour & stunt animations and inverse kinematics for hand & arm movements.", "Environment of the character's world such as the station, trains, cars, streets, construction zone and more.", "Some particle effects for charcter stunts."],
-    tech: ["Unity", "C#", "Github"],
+    longDescription: "This project was done in a team of 3. The purpose of this project was to create a short animation film using Unity. The animation consists of a character who has missed the last train to their destination and decides to run to the next station to hopefully catch the train agin. The character does crazy parkour and stunts through the station, streets, traffic cars and construction zone. Camera shots also show the character's facial expressions and different angles of the stunt. The project was built with the help of Github, animations from Mixamo and models from sketchfab & Unity Online Asset Store. The character facial expressions and video editing were done in Paint/Picsart and Premier Pro.",
+    features: ["Various character's facial and body expressions.", "Various pakour & stunt animations and inverse kinematics for hand & arm movements.", "Unique and interesting camera angles, shots, movement and charcter tracking.", "Environment of the character's world such as the station, trains, cars, streets, construction zone and more.", "Some particle effects for character stunts."],
+    tech: ["Unity", "C#", "Github", "Picsart"],
     github: "",
-    demo: "https://www.youtube.com/watch?v=-JTJFVzm7gI",
-    photos: ["photo url"],
+    demo: ["https://www.youtube.com/watch?v=-JTJFVzm7gI"],
+    photos: ["/projects/3d-animation-film-photo1.png", "/projects/3d-animation-film-photo2.png", "/projects/3d-animation-film-photo3.png", "/projects/3d-animation-film-photo4.png", "/projects/3d-animation-film-photo5.png", "/projects/3d-animation-film-photo6.png", "/projects/3d-animation-film-photo7.png", "/projects/3d-animation-film-photo8.png"],
     highlight: false, // only shows on the full Projects page
   },
   {
@@ -79,8 +79,8 @@ export const projects = [
     features: ["A map view of sydney showing station locations.", "A schedule/timetable of upcoming and outgoing trains to certain stations", "A trip planner view for using trains."],
     tech: ["Xcode", "Swift", "Github", "API", "Figma"],
     github: "https://github.com/Yimyax/Travel-App",
-    demo: "",
-    photos: ["photo url"],
+    demo: [],
+    photos: [],
     highlight: false, // only shows on the full Projects page
   },
   {
@@ -91,20 +91,20 @@ export const projects = [
     features: ["Grid view of all products and items in store.", "Items and products are collected from an SQL database.", "Customer form is included in item purchase."],
     tech: ["HTML", "PHP", "CSS", "Javascript", "XAMPP", "SQL", "AWS (student)"],
     github: "https://github.com/Yimyax/Shopping-Website",
-    demo: "",
-    photos: ["photo url"],
+    demo: [],
+    photos: ["/projects/shopping-website-photo1.png","/projects/shopping-website-photo2.png","/projects/shopping-website-photo3.png","/projects/shopping-website-photo4.png"],
     highlight: false, // only shows on the full Projects page
   },
   {
-    slug: "portfolio-website",
-    title: "Portfolio Website",
+    slug: "custom-portfolio-website",
+    title: "Custom Portfolio Website",
     description: "A custom website showing projects and skills. (This very website)",
     longDescription: "This project is done individually. The purpose of this project was to create a real live website displaying my skills and past projects which I have worked on. The website currently displays 3 main pages for the home page, about page and projects page. The specific project page (This very page you are reading right now) displays the specific project in a bit more detail. This project was built with the help of Visual Studio Code and deployed using Github and Vercel.",
-    features: ["Features 3 main pages and specific pages for each project.", "A button for changing the state of the website's colour scheme.", "The website updates automatically when it detects any changes in github."],
+    features: ["Features 3 main pages and specific pages for each project.", "A button for changing the state of the website's colour scheme.", "In the project's details page, there is a photo gallery which shows a slideshow of photos.", "The website updates automatically when it detects any changes in github."],
     tech: ["React", "HTML", "Typescript", "CSS", "Javascript", "Node.js", "Next.js"],
     github: "https://github.com/Yimyax/my-portfolio",
-    demo: "",
-    photos: ["photo url"],
-    highlight: false, // only shows on the full Projects page
+    demo: ["https://joshuaisaraela.vercel.app/"],
+    photos: ["/projects/portfolio-website-photo1.png","/projects/portfolio-website-photo2.png","/projects/portfolio-website-photo3.png"],
+    highlight: true, // only shows on the full Projects page
   },
 ];
